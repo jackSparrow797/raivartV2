@@ -1,0 +1,36 @@
+{
+  "name": "eco",
+  "version": "1.0.0",
+  "description": "front-design",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackSparrow797/design-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackSparrow797/design-template/issues"
+  },
+  "homepage": "https://github.com/jackSparrow797/design-template#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.4.2",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.0",
+    "sass-loader": "^8.0.2",
+    "slick-carousel": "^1.8.1",
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  }
+}
