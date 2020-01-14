@@ -8,3 +8,4 @@ global.$ = $;
 import 'slick-carousel/slick/slick.min'
 import 'bootstrap/js/dist/util';
 import './js/sliders';
+import './js/menu';

@@ -18,7 +18,57 @@
         color: $white;
         padding-top: $f25px;
         padding-bottom: $f25px;
+        border-bottom: 3px solid transparent;
+        &:hover {
+          text-decoration: none;
+          border-bottom: 3px solid $green;
+        }
       }
     }
+  }
+}
+
+.mobile-menu {
+  padding-bottom: $f36px;
+  .menu {
+    padding-top: $f5px;
+    ul {
+      li {
+        a {
+          font-weight: 500;
+          font-size: $f16px;
+          line-height: $f19px;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          padding-top: $f15px;
+          padding-bottom: $f15px;
+          display: block;
+          color: $cDark;
+        }
+      }
+    }
+  }
+}
+.menu-mobile-toggle {
+  img {display: block}
+  img.close {display: none}
+  &.open {
+    img.close {display: block}
+    img {display: none}
+  }
+}
+@media (max-width: 1130px) {
+  header {
+    .green-link {
+      font-size: $f16px;
+    }
+  }
+
+  .menu-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
   }
 }

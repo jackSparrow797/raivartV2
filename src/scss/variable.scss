@@ -17,6 +17,7 @@ $gray-900: #212529 !default;
 $bg: #404041;
 
 $fbase: 16;
+$f5px: #{5/$fbase}rem;
 $f7px: #{7/$fbase}rem;
 $f8px: #{8/$fbase}rem;
 $f9px: #{9/$fbase}rem;
@@ -45,6 +46,7 @@ $f40px: #{40/$fbase}rem;
 $f50px: #{50/$fbase}rem;
 $f55px: #{55/$fbase}rem;
 $f69px: #{69/$fbase}rem;
+$f100px: #{100/$fbase}rem;
 
 
 $grid-breakpoints: (
