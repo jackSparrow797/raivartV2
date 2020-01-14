@@ -6,3 +6,4 @@
 /node_modules/
 /public/core/config/config.inc.php
 /public/core/cache/
+!/public/assets/design/images/

@@ -1,0 +1,198 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '74de3794fa25dcfc3c4a0b853277ed61' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'ebf74efd82fa0e540aa67ddf95fdf4ce' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => '8aa4871867452c61dd3caa028fc21feb',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => '0c092950999ab5113eb852f632e240d0',
+            ),
+            'daba438c8e2b285a6c1a770ed90736fa' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => 'a13da8b2fe4bb3536469aa5313613fc2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => '4dabadbae1c9579a9ba396ab99eef7db',
+            ),
+            '83484912be57dabccb6c2997e3c92a9f' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => 'bce7f43c7859499d4565bcb7ad8633c4',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => 'ec519331da2d89da8fe27c77901fcbaa',
+            ),
+            '9a117b99f3b3d8c6a2c28a0161158b4b' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderList","priority":0,"propertyset":0}',
+              'guid' => '2600019189fa3423fc82789c6a07ea10',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderList',
+              ),
+              'signature' => 'a52457324060cc78f2bd0870b510b338',
+            ),
+            '60aa70bc597a541750ae88ed6c5f7820' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVOutputRenderPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '71d349d9164aab64921ee3ca32411bbe',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVOutputRenderPropertiesList',
+              ),
+              'signature' => 'a8b11f98b03c3d8bef528abd5baf0d25',
+            ),
+            '71617694a8a63500e3370efea96c3e25' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormRender","priority":0,"propertyset":0}',
+              'guid' => '4e6fa9cdbb3dc0aa3330960ba599407b',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormRender',
+              ),
+              'signature' => 'fefb082f46a3a937abe60ba51331b448',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"ColorPicker","description":"ColorPicker runtime hooks - registers custom TV input & output types and includes javascripts on document edit pages.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * ColorPicker Runtime Hooks\\n *\\n * Registers custom TV input & output types and includes javascripts on document\\n * edit pages so that the TV can be used from within other extras (i.e. MIGX,\\n * Collections)\\n *\\n * @package colorpicker\\n * @subpackage plugin\\n *\\n *\\n * @event OnManagerPageBeforeRender\\n * @event OnTVInputRenderList\\n * @event OnTVOutputRenderList\\n * @event OnTVInputPropertiesList\\n * @event OnTVOutputRenderPropertiesList\\n * @event OnDocFormRender\\n *\\n * @var modX $modx\\n *\\/\\n\\n$eventName = $modx->event->name;\\n\\n$corePath = $modx->getOption(\'colorpicker.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/colorpicker\\/\');\\n\\/** @var ColorPicker $colorpicker *\\/\\n$colorpicker = $modx->getService(\'colorpicker\', \'ColorPicker\', $corePath . \'model\\/colorpicker\\/\', array(\\n    \'core_path\' => $corePath\\n));\\n\\nswitch ($eventName) {\\n    case \'OnManagerPageBeforeRender\':\\n        $modx->controller->addLexiconTopic(\'colorpicker:default\');\\n        $colorpicker->includeScriptAssets();\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVOutputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/output\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/options\\/\');\\n        break;\\n    case \'OnTVOutputRenderPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/output\\/options\\/\');\\n        break;\\n    case \'OnDocFormRender\':\\n        $colorpicker->includeScriptAssets();\\n        break;\\n};","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * ColorPicker Runtime Hooks\\n *\\n * Registers custom TV input & output types and includes javascripts on document\\n * edit pages so that the TV can be used from within other extras (i.e. MIGX,\\n * Collections)\\n *\\n * @package colorpicker\\n * @subpackage plugin\\n *\\n *\\n * @event OnManagerPageBeforeRender\\n * @event OnTVInputRenderList\\n * @event OnTVOutputRenderList\\n * @event OnTVInputPropertiesList\\n * @event OnTVOutputRenderPropertiesList\\n * @event OnDocFormRender\\n *\\n * @var modX $modx\\n *\\/\\n\\n$eventName = $modx->event->name;\\n\\n$corePath = $modx->getOption(\'colorpicker.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/colorpicker\\/\');\\n\\/** @var ColorPicker $colorpicker *\\/\\n$colorpicker = $modx->getService(\'colorpicker\', \'ColorPicker\', $corePath . \'model\\/colorpicker\\/\', array(\\n    \'core_path\' => $corePath\\n));\\n\\nswitch ($eventName) {\\n    case \'OnManagerPageBeforeRender\':\\n        $modx->controller->addLexiconTopic(\'colorpicker:default\');\\n        $colorpicker->includeScriptAssets();\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVOutputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/output\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/input\\/options\\/\');\\n        break;\\n    case \'OnTVOutputRenderPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tv\\/output\\/options\\/\');\\n        break;\\n    case \'OnDocFormRender\':\\n        $colorpicker->includeScriptAssets();\\n        break;\\n};"}',
+        'guid' => 'bc6a8523f0a8e026af5299312ee9f5d1',
+        'native_key' => NULL,
+        'signature' => '71a9af1032ebea5b79092871ac69b91a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'colorpicker',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"colorpicker-1.0.4-pl\\/modCategory\\/cfdf56897f1ce532023f295516320eab\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"colorpicker"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"colorpicker-1.0.4-pl\\/modCategory\\/cfdf56897f1ce532023f295516320eab\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"colorpicker"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"colorpicker-1.0.4-pl\\/modCategory\\/cfdf56897f1ce532023f295516320eab.resolve.treehillstudio.resolver","type":"php","name":"resolve.treehillstudio"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0c152f848fc740dac590f4dd7f368e5e',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'cfdf56897f1ce532023f295516320eab',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"ColorPicker","rank":0}',
+);

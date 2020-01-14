@@ -1,0 +1,24 @@
+.position-relative {position: relative;}
+.menu-desktop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  ul {
+    list-style: none;
+    border-bottom: 1px solid $green;
+    li {
+      a {
+        display: block;
+        font-weight: 500;
+        font-size: $f13px;
+        line-height: $f15px;
+        text-transform: uppercase;
+        color: $white;
+        padding-top: $f25px;
+        padding-bottom: $f25px;
+      }
+    }
+  }
+}
