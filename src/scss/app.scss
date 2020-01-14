@@ -1,14 +1,20 @@
 // Required
+
+@import "variable";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-@import "variable";
 
 // Optional
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/mixins/grid-framework";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/display";
 
 
 @import 'main.scss';
+@import 'slick.scss';
+@import 'menu.scss';

@@ -5,9 +5,61 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green:   #B0CB30;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $white:   #fff !default;
 
+$gray: #F2F2F2;
+
 $gray-900: #212529 !default;
+
+$bg: #404041;
+
+$fbase: 16;
+$f7px: #{7/$fbase}rem;
+$f8px: #{8/$fbase}rem;
+$f9px: #{9/$fbase}rem;
+$f10px: #{10/$fbase}rem;
+$f11px: #{11/$fbase}rem;
+$f12px: #{12/$fbase}rem;
+$f13px: #{13/$fbase}rem;
+$f14px: #{14/$fbase}rem;
+$f15px: #{15/$fbase}rem;
+$f16px: #{16/$fbase}rem;
+$f17px: #{17/$fbase}rem;
+$f18px: #{18/$fbase}rem;
+$f19px: #{19/$fbase}rem;
+$f20px: #{20/$fbase}rem;
+$f22px: #{22/$fbase}rem;
+$f24px: #{24/$fbase}rem;
+$f25px: #{25/$fbase}rem;
+$f26px: #{26/$fbase}rem;
+$f28px: #{28/$fbase}rem;
+$f30px: #{30/$fbase}rem;
+$f32px: #{32/$fbase}rem;
+$f34px: #{34/$fbase}rem;
+$f36px: #{36/$fbase}rem;
+$f38px: #{38/$fbase}rem;
+$f40px: #{40/$fbase}rem;
+$f50px: #{50/$fbase}rem;
+$f55px: #{55/$fbase}rem;
+$f69px: #{69/$fbase}rem;
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 950px,
+        lg: 1130px,
+        xl: 1330px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 920px,
+        lg: 1100px,
+        xl: 1306px
+);
+
+$cDark: #404041;
