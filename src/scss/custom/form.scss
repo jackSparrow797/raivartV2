@@ -1,0 +1,41 @@
+.form-control {
+  border: 0;
+  border-bottom: 1px solid $input-bottom-color;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $f18px;
+  line-height: $f26px;
+  color: $input-color;
+  opacity: 0.7;
+  width: 100%;
+  padding: $f10px 0;
+}
+.form-group {
+  margin-bottom: $f10px;
+}
+label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $f18px;
+  line-height: $f26px;
+  color: $input-color;
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18px;
+    line-height: $f26px;
+    color: $input-color;
+    text-decoration: underline;
+  }
+}
+.checkbox {
+  border: 1px solid $input-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: none;
+  width: 20px;
+  height: 20px;
+}

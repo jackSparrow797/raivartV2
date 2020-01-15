@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
   margin: 0
 }
@@ -11,6 +13,10 @@ html, body {
 html {
   font-family: 'Rubik', sans-serif;
   font-size: $fbase;
+}
+
+input {
+  outline: none;
 }
 
 img {
@@ -76,11 +82,11 @@ header {
 @media (max-width: 1430px) {
 }
 
-@media (max-width: 1330px) {
+@include media-breakpoint-down(xl) {
   html {font-size: 14px;}
 }
 
-@media (max-width: 1130px) {
+@include media-breakpoint-down(lg) {
   .block-grey {
     background: $gray;
     color: $cDark;
@@ -106,12 +112,7 @@ header {
   .block-white {
     background: $white;
   }
-  .menu-mobile {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-  }
+
 
   .capt {
     font-weight: 500;
