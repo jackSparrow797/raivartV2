@@ -57,7 +57,7 @@
     img {display: none}
   }
 }
-@media (max-width: 1130px) {
+@include media-breakpoint-down(lg) {
   header {
     .green-link {
       font-size: $f16px;

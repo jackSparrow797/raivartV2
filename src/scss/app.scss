@@ -9,13 +9,13 @@
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/utilities/spacing";
 @import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/mixins/grid-framework";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities/display";
 
 
-@import 'main.scss';
-@import 'slick.scss';
-@import 'menu.scss';
+@import './main';
+@import './slick';
+@import './menu';
+@import './customs';
 @import './blocks';

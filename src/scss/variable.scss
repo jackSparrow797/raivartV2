@@ -38,14 +38,22 @@ $f25px: #{25/$fbase}rem;
 $f26px: #{26/$fbase}rem;
 $f28px: #{28/$fbase}rem;
 $f30px: #{30/$fbase}rem;
+$f31px: #{31/$fbase}rem;
 $f32px: #{32/$fbase}rem;
 $f34px: #{34/$fbase}rem;
+$f35px: #{35/$fbase}rem;
 $f36px: #{36/$fbase}rem;
 $f38px: #{38/$fbase}rem;
 $f40px: #{40/$fbase}rem;
+$f47px: #{47/$fbase}rem;
 $f50px: #{50/$fbase}rem;
 $f55px: #{55/$fbase}rem;
+$f60px: #{60/$fbase}rem;
+$f63px: #{63/$fbase}rem;
 $f69px: #{69/$fbase}rem;
+$f72px: #{72/$fbase}rem;
+$f76px: #{76/$fbase}rem;
+$f80px: #{80/$fbase}rem;
 $f100px: #{100/$fbase}rem;
 
 
@@ -65,3 +73,9 @@ $container-max-widths: (
 );
 
 $cDark: #404041;
+$input-bottom-color: #ACACAC;
+$input-color: #1B130F;
+
+$modal-md: 535px;
+$modal-header-padding: 0 0 1rem 0;
+$modal-inner-padding: 1rem 0;

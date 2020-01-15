@@ -1,4 +1,27 @@
 .problems {
   padding-top: $f100px;
   padding-bottom: $f100px;
+  .problem-title {
+    background: #585858;
+    text-align: center;
+    h4 {
+      text-align: left;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $f38px;
+      line-height: $f47px;
+      display: inline-block;
+      border-left: 4px solid $green;
+      padding-left: $f17px;
+      color: $white;
+      width: 85%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .problems .problem-title h4 {
+    font-size: $f26px;
+    line-height: $f31px;
+  }
 }

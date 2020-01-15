@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 1130px) {
+@include media-breakpoint-down(lg) {
   .slider {
     .slide-item {
       .img {

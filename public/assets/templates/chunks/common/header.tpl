@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="col-lg-auto  order-lg-4">
-                        <a href="#" class="btn btn-outline-success">заказать звонок</a>
+                        <a href="#modal-call" data-toggle="modal" class="btn btn-outline-success">заказать звонок</a>
                     </div>
                 </div>
             </div>
