@@ -5,7 +5,7 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #B0CB30;
+$green:   #60B238;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $white:   #fff !default;
@@ -14,7 +14,7 @@ $gray: #F2F2F2;
 
 $gray-900: #212529 !default;
 
-$bg: #404041;
+$bg: #201E1C;
 
 $fbase: 16;
 $f5px: #{5/$fbase}rem;
@@ -33,10 +33,12 @@ $f18px: #{18/$fbase}rem;
 $f19px: #{19/$fbase}rem;
 $f20px: #{20/$fbase}rem;
 $f22px: #{22/$fbase}rem;
+$f23px: #{23/$fbase}rem;
 $f24px: #{24/$fbase}rem;
 $f25px: #{25/$fbase}rem;
 $f26px: #{26/$fbase}rem;
 $f28px: #{28/$fbase}rem;
+$f29px: #{29/$fbase}rem;
 $f30px: #{30/$fbase}rem;
 $f31px: #{31/$fbase}rem;
 $f32px: #{32/$fbase}rem;
@@ -45,16 +47,22 @@ $f35px: #{35/$fbase}rem;
 $f36px: #{36/$fbase}rem;
 $f38px: #{38/$fbase}rem;
 $f40px: #{40/$fbase}rem;
+$f42px: #{42/$fbase}rem;
 $f47px: #{47/$fbase}rem;
 $f50px: #{50/$fbase}rem;
+$f52px: #{52/$fbase}rem;
 $f55px: #{55/$fbase}rem;
 $f60px: #{60/$fbase}rem;
+$f62px: #{62/$fbase}rem;
 $f63px: #{63/$fbase}rem;
+$f64px: #{64/$fbase}rem;
 $f69px: #{69/$fbase}rem;
 $f72px: #{72/$fbase}rem;
+$f75px: #{75/$fbase}rem;
 $f76px: #{76/$fbase}rem;
 $f80px: #{80/$fbase}rem;
 $f100px: #{100/$fbase}rem;
+$f250px: #{250/$fbase}rem;
 
 
 $grid-breakpoints: (

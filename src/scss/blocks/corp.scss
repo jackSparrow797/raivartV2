@@ -1,4 +1,7 @@
-.corp{
+.corp {
+  padding-top: $f100px;
+  padding-bottom: $f100px;
+
   .text {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -7,20 +10,37 @@
     line-height: $f22px;
     color: $cDark;
   }
-  iframe {
+
+  .youtube-img {
     height: 411px;
   }
+  .youtube-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
-.advantages{
+
+.advantages {
   border: 1px solid #C5C5C5;
-  height: 159px;
-  width: 241px;
   text-align: center;
 }
+
 @include media-breakpoint-down(lg) {
-  .corp{
-    .text{
+  .corp {
+    .text {
       font-size: $f14px;
+    }
+    .youtube-img {
+      height: 200px;
     }
   }
 }

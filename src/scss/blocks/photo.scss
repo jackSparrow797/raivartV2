@@ -1,0 +1,53 @@
+.row-photo {
+  padding-top: $f76px;
+  padding-bottom: $f76px;
+  .photo-tabs {
+    padding-bottom: $f72px;
+    ul {
+      list-style: none;
+      border-bottom: 1px solid $green;
+      li {
+        display: block;
+        a {
+          display: block;
+          font-weight: 500;
+          font-size: $f42px;
+          line-height: $f63px;
+          letter-spacing: 0.03em;
+          color: $cDark;
+          border-bottom: 3px solid transparent;
+          padding-bottom: $f8px;
+          margin-right: $f50px;
+          &:hover {
+            text-decoration: none;
+            border-bottom: 3px solid $green;
+          }
+        }
+        &.active a {
+          text-decoration: none;
+          border-bottom: 3px solid $green;
+        }
+      }
+    }
+
+  }
+  .slick-track {
+    margin: initial;
+  }
+}
+
+
+.photo-tab {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .row-photo .photo-tabs ul li a {
+    font-size: $f28px;
+    line-height: $f42px;
+  }
+}
+

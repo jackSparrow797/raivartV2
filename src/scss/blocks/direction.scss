@@ -2,3 +2,33 @@
   padding-top: $f72px;
   padding-bottom: $f100px;
 }
+
+.product-item {
+  text-align: center;
+
+  a {
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .direction-text {
+    font-size: $f22px;
+    line-height: $f29px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: $f30px;
+    padding-top: $f15px;
+    color: $cDark;
+    display: block;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .product-item .direction-text {
+    font-size: $f16px;
+    line-height: $f19px;
+  }
+}

@@ -12,8 +12,10 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/text";
 
 
+@import './fonts/helios_cond';
 @import './main';
 @import './slick';
 @import './menu';

@@ -79,6 +79,9 @@
 
   }
 }
+.slick-disabled {
+  opacity: 0.5;
+}
 
 @include media-breakpoint-down(lg) {
   .slider {
@@ -99,5 +102,9 @@
         }
       }
     }
+  }
+  .arrows-bottom .slick-dots {
+    position: initial;
+    margin-top: $f30px;
   }
 }

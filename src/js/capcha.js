@@ -1,20 +1,11 @@
-import {load} from "recaptcha-v3";
 
 $(document).on('af_complete', function (event, response) {
     var form = response.form;
-    //public key
-    load('6Lekhc8UAAAAALhSz9VS2xFMWuoVxt7c1dTOMmt1').then((recaptcha) => {
-        recaptcha.execute('action_name').then((token) => {
-            $('form').each(function (index) {
-                $(this).find('input[name="token"]').val(token);
-            });
-        })
-    });
 
     if (response.success) {
         switch (form.attr('id')) {
-            case "form-cost":
-                $('#form-diller-send').modal('hide');
+            case "form-diller-send":
+                $('#form-diller').modal('hide');
                 break;
 
             case "form-call":
